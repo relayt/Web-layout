@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="STYLESHEET" type="text/css" href="styles.css" />
+    <script>
+        function Hidewebsite(e) {
+            if (e.value == 1) {
+                document.getElementById('website').style.display = 'none';
+                document.getElementById('supplier').checked = false;
+            }
+            else if (e.value == 2) {
+                document.getElementById('website').style.display = 'flex';
+                document.getElementById('buyer').checked = false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="elements__potition">
+        <div class="headlines">Регистрация</div>
+        <div class="element__container">
+            <div class="field-label">
+                <label class="headlines">Вы регистрируетесь как</label>
+            </div>
+            <label class="radio">
+                <input type="radio" id="buyer" value="1" onclick="Hidewebsite(this)">
+                Покупатель
+            </label>
+            <label class="radio">
+                <input type="radio" id="supplier" value="2" onclick="Hidewebsite(this)">
+                Поставщик
+            </label>
+        </div>
+
+        <div class="element__container">
+            <div class="input__field">
+                <label class="label">Эл. почта</label>
+                <input class="input" type="text">
+            </div>
+        </div>
+
+
+
+
+        <div class="headlines">Название организации</div>
+
+        <div class="element__container">
+            <div class="input__field">
+                <label class="label">ИП или Юр.лицо</label>
+                <input class="input" type="text">
+            </div>
+        </div>
+
+        <div class="element__container">
+            <div class="input__field">
+                <label class="label">ИНН</label>
+                <input class="input" type="text">
+            </div>
+        </div>
+
+
+
+        <div class="headlines">Фактический адрес</div>
+
+        <div class="element__container">
+            <div class="input__field">
+                <label class="label">Ваш город</label>
+                <input class="input" type="text">
+            </div>
+        </div>
+
+        <div class="address__input__field">
+            <div class="street__field">
+                <div class="input__field">
+                    <label class="label">Улица</label>
+                    <input class="input" type="text">
+                </div>
+            </div>
+            <div class="house__field">
+                <div class="input__field">
+                    <label class="label">Дом/стр.</label>
+                    <input class="input" type="text">
+                </div>
+            </div>
+            <div class="office__field">
+                <div class="input__field">
+                    <label class="label">Офис</label>
+                    <input class="input" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="element__container">
+            <div class="input__field">
+                <label class="label">Телефон</label>
+                <div class="phone__number">+7</div>
+                <input class="input input__phone__number" type="text">
+            </div>
+        </div>
+
+        <div class="element__container">
+            <div class="input__field input__website__visibility" id="website">
+                <label class="label">Сайт вашей компании</label>
+                <input class="input" type="text">
+            </div>
+        </div>
+
+        <div class="element__container">
+            <div class="field-label">
+                <label class="headlines">Вид деятельности</label>
+            </div>
+            <label class="checkbox">
+                <div class="chekbox__potition">
+                    <label class="label__checkbox">Магазин</label>
+                    <input type="checkbox">
+                </div>
+                <div class="chekbox__potition">
+                    <label class="label__checkbox">Региональная сеть магазинов</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="chekbox__potition">
+                    <label class="label__checkbox">Федеральная сеть магазинов</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="chekbox__potition">
+                    <label class="label__checkbox">Интернет-магазин</label>
+                    <input type="checkbox">
+                </div>
+
+                <div class="chekbox__potition">
+                    <label class="label__checkbox">Авто сервис</label>
+                    <input type="checkbox">
+                </div>
+            </label>
+            <div class="element__container">
+                <div class="input__field">
+                    <label class="label">Прочее</label>
+                    <input class="input" type="text">
+                </div>
+            </div>
+        </div>
+        <button class="button__send">Отправить заявку</button>
+    </div>
+</body>
+
+</html>
